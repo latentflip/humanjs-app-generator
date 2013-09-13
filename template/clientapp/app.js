@@ -19,8 +19,6 @@ module.exports = {
         // to the main app object.
         _.extend(this, Backbone.Events);
 
-
-
         var self = window.app = this;
 
         window.templates = require('./templates');
@@ -72,6 +70,7 @@ module.exports = {
 
         // we call show
         container.append(view.show().el);
+        app.currentPage = view;
     }
 };
 
