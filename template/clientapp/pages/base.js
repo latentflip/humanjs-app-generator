@@ -23,6 +23,9 @@ module.exports = HumanView.extend({
     show: function (animation) {
         var self = this;
 
+        // add class to app header
+        $('header').addClass(_.result(this, 'headerClass'));
+        
         // register page-specific keyboard shortcuts
         //this.registerKeyboardShortcuts();
 
